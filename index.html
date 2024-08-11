@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Kelompok 4</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.png" alt="">
+        <h1 class="sitename">Kelompok 4</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">Breakpoint</a></li>
+          <li><a href="#services">Grid</a></li>
+          <li><a href="#portfolio">Pengaturan Kolom</a></li>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted flex-md-shrink-0" href="index.html#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h1 data-aos="fade-up">Kelompok 4</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Tugas Boostrap Mencari Materi Tentang Grid</p>
+            <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
+              <a href="#about" class="btn-get-started">Get Started <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Breakpoint Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <div class="container">
+                <h1>Grid Breakpoint</h1>
+                <p>.col-4 (Extra Small) &lt;576px </p>
+                <p>.col-sm-4 (Small) &GreaterEqual;576px </p>
+                <p>.col-md-4 (Medium) &lt;768px </p>
+                <p>.col-lg-4 (Large) &lt;992px </p>
+                <p>.col-xl-4 (Extra Large) &lt;1200px </p>
+                <p>.col-xxl-4 (Extra extra large) &lt;1400px </p>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column align-items-center" data-aos="zoom-out" data-aos-delay="200">
+          <div class="content">
+              <h1>Row</h1>
+              <div
+                  class="row text-center"> <!-- Tidak Responsive  --> 
+                  <div class="col-4 border">.col-4</div>
+                  <div class="col-4 border">.col-4</div>
+                  <div class="col-4 border">.col-4</div>
+              </div>
+              <div
+                  class="row text-center"> <!-- Otomatis menjadi flex-direction: column; saat lebar layar dikecilkan secara maksimal -->
+                  <div class="col-sm-4 border">.col-sm-4</div>
+                  <div class="col-sm-4 border">.col-sm-4</div>
+                  <div class="col-sm-4 border">.col-sm-4</div>
+              </div>
+              <div
+                  class="row text-center"> <!-- Otomatis menjadi flex-direction: column; saat lebar layar dikecilkan agak banyak -->
+                  <div class="col-md-4 border">.col-md-4</div>
+                  <div class="col-md-4 border">.col-md-4</div>
+                  <div class="col-md-4 border">.col-md-4</div>
+              </div>
+              <div
+                  class="row text-center"> <!-- Otomatis menjadi flex-direction: column; saat lebar layar dikecilkan setengah -->
+                  <div class="col-lg-4 border">.col-lg-4</div>
+                  <div class="col-lg-4 border">.col-lg-4</div>
+                  <div class="col-lg-4 border">.col-lg-4</div>
+              </div>
+              <div
+                  class="row text-center"> <!-- Otomatis menjadi flex-direction: column; saat lebar layar dikecilkan agak sedikit -->
+                  <div class="col-xl-4 border">.col-xl-4</div>
+                  <div class="col-xl-4 border">.col-xl-4</div>
+                  <div class="col-xl-4 border">.col-xl-4</div>
+              </div>
+              <div
+                  class="row text-center"> <!-- Otomatis menjadi flex-direction: column; saat lebar layar dikecilkan sedikit-->
+                  <div class="col-xxl-4 border">.col-xxl-4</div>
+                  <div class="col-xxl-4 border">.col-xxl-4</div>
+                  <div class="col-xxl-4 border">.col-xxl-4</div>
+              </div>
+              <br>
+              <h1>Column</h1>
+              <div
+                  class="column text-center"> <!-- Tidak Responsive  --> 
+                  <div class="col-4 border">.col-4</div>
+                  <div class="col-4 border">.col-4</div>
+                  <div class="col-4 border">.col-4</div>
+              </div>
+              <div
+                  class="column text-center"> <!-- Otomatis width: full; saat lebar layar dikecilkan secara maksimal -->
+                  <div class="col-sm-4 border">.col-sm-4</div>
+                  <div class="col-sm-4 border">.col-sm-4</div>
+                  <div class="col-sm-4 border">.col-sm-4</div>
+              </div>
+              <div
+                  class="column text-center"> <!-- Otomatis width: full; saat lebar layar dikecilkan agak banyak -->
+                  <div class="col-md-4 border">.col-md-4</div>
+                  <div class="col-md-4 border">.col-md-4</div>
+                  <div class="col-md-4 border">.col-md-4</div>
+              </div>
+              <div
+                  class="column text-center"> <!-- Otomatis width: full; saat lebar layar dikecilkan setengah -->
+                  <div class="col-lg-4 border">.col-lg-4</div>
+                  <div class="col-lg-4 border">.col-lg-4</div>
+                  <div class="col-lg-4 border">.col-lg-4</div>
+              </div>
+              <div
+                  class="column text-center"> <!-- Otomatis width: full; saat lebar layar dikecilkan agak sedikit -->
+                  <div class="col-xl-4 border">.col-xl-4</div>
+                  <div class="col-xl-4 border">.col-xl-4</div>
+                  <div class="col-xl-4 border">.col-xl-4</div>
+              </div>
+              <div
+                  class="column text-center"> <!-- Otomatis width: full; saat lebar layar dikecilkan sedikit-->
+                  <div class="col-xxl-4 border">.col-xxl-4</div>
+                  <div class="col-xxl-4 border">.col-xxl-4</div>
+                  <div class="col-xxl-4 border">.col-xxl-4</div>
+              </div>
+              <h1>Text Breakpoint</h1>
+              <p class="text-end">End aligned text on viewports sized xs (extra small) or wider.</p>
+              <p class="text-sm-end">End aligned text on viewports sized SM (small) or wider.</p>
+              <p class="text-md-end">End aligned text on viewports sized MD (medium) or wider.</p>
+              <p class="text-lg-end">End aligned text on viewports sized LG (large) or wider.</p>
+              <p class="text-xl-end">End aligned text on viewports sized XL (extra large) or wider.</p>
+              <p class="text-xxl-end">End aligned text on viewports sized XXL (extra extra large) or wider.</p>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Breakpoint Section -->
+
+    <!-- Grid Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Bootstrap</h2>
+        <p>Grid<br></p>
+      </div><!-- End Section Title -->
+
+      <div class="p-5 container border border-1 border-success text-center">
+        <h3 class="p-5 text-success">Container</h3>
+        <div class="row gy-4 border border-1 border-info">
+          <h3 class="text-info">Row</h3>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <i class="bi bi-activity icon"></i>
+              <h3>Column 1</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi, eveniet aperiam eligendi ab, aliquid aspernatur laudantium corrupti, laboriosam tenetur molestiae assumenda numquam magnam vel reiciendis atque nulla maxime quae?</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <i class="bi bi-broadcast icon"></i>
+              <h3>Column 2</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium illo architecto aliquid. Magnam optio voluptatibus aut soluta quis aliquid dolor architecto dolores distinctio sequi! Accusamus, ullam. Asperiores libero iure aliquid?</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+              <i class="bi bi-easel icon"></i>
+              <h3>Column 3</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ducimus dolor minus commodi consequatur laboriosam quia fuga consequuntur dolores nihil autem! Aspernatur vel dolorem, corporis ducimus nihil itaque esse quos!</p>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+
+      </div>
+
+    </section><!-- /Grid Section -->
+
+    <!-- Pengaturan Kolom Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Bootstrap</h2>
+        <p>Pengaturan Kolom</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".bootstrap-auto">Auto</li>
+            <li data-filter=".bootstrap-offset">Offset</li>
+            <li data-filter=".bootstrap-order">Order</li>
+            <li data-filter=".bootstrap-align-justify">Align / Justify</li>
+            <li data-filter=".bootstrap-flexbox">Flexbox</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item bootstrap-auto">
+              <div class="portfolio-content h-100">
+                <form class="row m-auto g-5 border border-1 border-black align-items-center">
+                  <div class="col-auto">
+                    <label class="visually-hidden" for="autoSizingInput">Name</label>
+                    <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
+                  </div>
+                  <div class="col-auto">
+                    <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                    <div class="input-group">
+                      <div class="input-group-text">@</div>
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                    <select class="form-select" id="autoSizingSelect">
+                      <option selected>Choose...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                      <label class="form-check-label" for="autoSizingCheck">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+                <div class="portfolio-info">
+                  <h4>Auto</h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item bootstrap-offset">
+              <div class="portfolio-content h-100">
+                <div class="m-auto container mt-5">
+                  <h1 class="text-center">Offset</h1>
+                  <div class="row">
+                    <div class="col-md-4 text-bg-info">.col-md-4</div>
+                    <div class="col-md-4 text-bg-info offset-md-4">.col-md-4 offset-md-4</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 text-bg-info offset-md-3">.col-md-3 offset-md-3</div>
+                    <div class="col-md-3 text-bg-info offset-md-3">.col-md-3 offset-md-3</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 text-bg-info offset-md-3">.col-md-6 offset-md-3</div>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Offset</h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item bootstrap-order">
+              <div class="portfolio-content h-100">
+                <div class="m-auto container mt-5">
+                  <h1 class="text-center">Order</h1>
+                  <div class="d-flex flex-row mb-3">
+                    <div class="p-2 bg-success order-lg-5">Flex item 1 order-lg-2</div>
+                    <div class="p-2 order-1 bg-primary">Flex item 2 order-1</div>
+                    <div class="p-2 bg-info">Flex item 3</div>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Order</h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item bootstrap-align-justify">
+              <div class="portfolio-content h-100">
+                <table style="height: 100px;">
+                  <tbody>
+                    <tr>
+                      <td class="border border-1 border-black align-baseline">.align-baseline</td>
+                      <td class="border border-1 border-black align-top">.align-top</td>
+                      <td class="border border-1 border-black align-middle">.align-middle</td>
+                      <td class="border border-1 border-black align-bottom">.align-bottom</td>
+                      <td class="border border-1 border-black align-text-top">.align-text-top</td>
+                      <td class="border border-1 border-black align-text-bottom">.align-text-bottom</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="portfolio-info">
+                  <h4>Vertical Align</h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item bootstrap-align-justify">
+              <div class="portfolio-content h-100">
+                <div class="bd-example bd-example-flex">
+                  <div class="d-flex border border-1 border-black align-items-start mb-3" style="height: 100px">
+                    <div class="p-2 text-bg-dark border border-1 border-secondary">.align-items-start Flex item</div>
+                    <div class="p-2 text-bg-dark border border-1 border-secondary">.align-items-start Flex item</div>
+                    <div class="p-2 text-bg-dark border border-1 border-secondary">.align-items-start Flex item</div>
+                  </div>
+                  <div class="d-flex border border-1 border-black align-items-end mb-3" style="height: 100px">
+                    <div class="p-2 text-bg-dark border border-1 border-secondary">.align-items-end Flex item</div>
+                    <div class="p-2 text-bg-dark border border-1 border-secondary">.align-items-end Flex item</div>
+                    <div class="p-2 text-bg-dark border border-1 border-secondary">.align-items-end Flex item</div>
+                  </div>
+                  <div class="d-flex border border-1 border-black align-items-center mb-3" style="height: 100px">
+                    <div class="p-2 text-bg-dark border border-1 border-secondary">.align-items-center Flex item</div>
+                    <div class="p-2 text-bg-dark border border-1 border-secondary">.align-items-center Flex item</div>
+                    <div class="p-2 text-bg-dark border border-1 border-secondary">.align-items-center Flex item</div>
+                  </div>
+                  <div class="d-flex border border-1 border-black align-items-baseline mb-3" style="height: 100px">
+                    <div class="p-2 text-bg-dark border border-1 border-secondary">.align-items-baseline Flex item</div>
+                    <div class="p-2 text-bg-dark border border-1 border-secondary">.align-items-baseline Flex item</div>
+                    <div class="p-2 text-bg-dark border border-1 border-secondary">.align-items-baseline Flex item</div>
+                  </div>
+                  <div class="d-flex border border-1 border-black align-items-stretch" style="height: 100px">
+                    <div class="p-2 text-bg-dark border border-1 border-secondary">.align-items-stretch Flex item</div>
+                    <div class="p-2 text-bg-dark border border-1 border-secondary">.align-items-stretch Flex item</div>
+                    <div class="p-2 text-bg-dark border border-1 border-secondary">.align-items-stretch Flex item</div>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Align Items</h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item bootstrap-align-justify">
+              <div class="portfolio-content h-100">
+                <div class="m-auto container mt-5">
+                  <div class="bd-example bd-example-flex">
+                    <div class="border border-1 border-black d-flex justify-content-start mb-3">
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">Justify</div>
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">Content</div>
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">Start</div>
+                    </div>
+                    <div class="border border-1 border-black d-flex justify-content-end mb-3">
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">Justify</div>
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">Content</div>
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">End</div>
+                    </div>
+                    <div class="border border-1 border-black d-flex justify-content-center mb-3">
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">Justify</div>
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">Content</div>
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">Center</div>
+                    </div>
+                    <div class="border border-1 border-black d-flex justify-content-between mb-3">
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">Justify</div>
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">Content</div>
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">Between</div>
+                    </div>
+                    <div class="border border-1 border-black d-flex justify-content-around mb-3">
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">Justify</div>
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">Content</div>
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">Around</div>
+                    </div>
+                    <div class="border border-1 border-black d-flex justify-content-evenly">
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">Justify</div>
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">Content</div>
+                      <div class="p-2 bd-highlight text-bg-info border border-1 border-secondary">Evenly</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Justify Content</h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item bootstrap-flexbox">
+              <div class="portfolio-content h-100">
+                <div class="d-flex flex-row justify-content-center gap-3 border border-1 border-black rounded m-auto w-25 p-3 bg-secondary">
+                  <div class="p-3 text-bg-info">Item 1</div>
+                  <div class="p-3 text-bg-info">Item 2</div>
+                  <div class="p-3 text-bg-info">Item 3</div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Flex Row</h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item bootstrap-flexbox">
+              <div class="portfolio-content h-100">
+                <div class="d-flex flex-column justify-content-center gap-3 border border-1 border-black rounded m-auto w-25 p-3 bg-secondary">
+                  <div class="p-3 text-bg-info">Item 1</div>
+                  <div class="p-3 text-bg-info">Item 2</div>
+                  <div class="p-3 text-bg-info">Item 3</div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Flex Column</h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item bootstrap-flexbox">
+              <div class="portfolio-content h-100">
+                <div class="d-flex flex-row-reverse justify-content-center gap-3 border border-1 border-black rounded m-auto w-25 p-3 bg-secondary">
+                  <div class="p-3 text-bg-info">Item 1</div>
+                  <div class="p-3 text-bg-info">Item 2</div>
+                  <div class="p-3 text-bg-info">Item 3</div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Flex Row Reverse</h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item bootstrap-flexbox">
+              <div class="portfolio-content h-100">
+                <div class="d-flex flex-column-reverse justify-content-center gap-3 border border-1 border-black rounded m-auto w-25 p-3 bg-secondary">
+                  <div class="p-3 text-bg-info">Item 1</div>
+                  <div class="p-3 text-bg-info">Item 2</div>
+                  <div class="p-3 text-bg-info">Item 3</div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Flex Column Reverse</h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item bootstrap-flexbox">
+              <div class="portfolio-content h-100">
+                <div class="d-flex flex-lg-column-reverse justify-content-center gap-3 border border-1 border-black rounded m-auto w-25 p-3 bg-secondary">
+                  <div class="p-3 text-bg-info">Item 1</div>
+                  <div class="p-3 text-bg-info">Item 2</div>
+                  <div class="p-3 text-bg-info">Item 3</div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Flex lg Column Reverse</h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item bootstrap-flexbox">
+              <div class="portfolio-content h-100">
+                <div class="d-flex flex-lg-row-reverse justify-content-center gap-3 border border-1 border-black rounded m-auto w-25 p-3 bg-secondary">
+                  <div class="p-3 text-bg-info">Item 1</div>
+                  <div class="p-3 text-bg-info">Item 2</div>
+                  <div class="p-3 text-bg-info">Item 3</div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Flex lg Row Reverse</h4>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+
+  <footer id="footer" class="footer">
+
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">FlexStart</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+      <p>By <strong class="px-1 sitename">Kelompok 4</strong></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
